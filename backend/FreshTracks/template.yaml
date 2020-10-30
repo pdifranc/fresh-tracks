@@ -98,7 +98,7 @@ Globals:
     EndpointConfiguration: EDGE
     Cors: 
       AllowMethods: "'OPTIONS,POST'"
-      AllowHeaders: "'Content-Type'"
+      AllowHeaders: "'*'"
       AllowOrigin: "'*'"   
 Resources:
 ##########################################################################

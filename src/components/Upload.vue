@@ -27,6 +27,7 @@ export default {
     msg: String
   },
   data() {
+    console.log("VUE_APP_POST_URL")
     console.log(process.env.VUE_APP_POST_URL)
     return {
       userID: 1,
