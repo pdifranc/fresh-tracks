@@ -52,10 +52,10 @@
     "semi": true
   },
   "eslintConfig": {
-    "root": true,
+    "root": false,
     "env": {
-      "node": true,
-      "browser": true
+      "node": false,
+      "browser": false
     },
     "plugins": [
       "vue"
