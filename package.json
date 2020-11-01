@@ -52,10 +52,22 @@
     "semi": true
   },
   "eslintConfig": {
-    "root": false,
+    "parser": "babel-eslint",
+    "parserOptions": {
+      "parser": "babel-eslint",
+      "ecmaFeatures": {
+        "jsx": true,
+        "modules": true
+      },
+      "ecmaVersion": 2020,
+      "sourceType": "module",
+      "useJSXTextNode": true,
+      "warnOnUnsupportedTypeScriptVersion": false
+    },
+    "root": true,
     "env": {
-      "node": false,
-      "browser": false
+      "node": true,
+      "browser": true
     },
     "plugins": [
       "vue"
@@ -64,8 +76,16 @@
       "plugin:vue/essential",
       "eslint:recommended"
     ],
-    "parserOptions": {
-      "parser": "babel-eslint"
+    "rules": {
+      "no-console": [
+        "error",
+        {
+          "allow": [
+            "error",
+            "warn"
+          ]
+        }
+      ]
     }
   }
 }
